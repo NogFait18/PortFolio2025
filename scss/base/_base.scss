@@ -1,0 +1,10 @@
+/* Estilos base (elemento HTML, etc) */
+@use "typhography";
+body{
+   background-image: url(../../assets/images/fondo.jpg);
+   height: 100vh;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   backdrop-filter:blur(6px);
+}
