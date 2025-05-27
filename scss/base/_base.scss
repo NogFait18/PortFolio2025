@@ -1,10 +1,23 @@
 /* Estilos base (elemento HTML, etc) */
 @use "typhography";
-body{
-   background-image: url(../../assets/images/fondo.jpg);
-   height: 100vh;
-   background-repeat: no-repeat;
-   background-size: cover;
-   background-position: center;
-   backdrop-filter:blur(13px);
+body {
+  margin: 0;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../../assets/images/fondo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  filter: blur(13px);
+  z-index: -1;
 }
